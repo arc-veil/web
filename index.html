@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcveil</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Arcveil - Azure Architecture Experts" />
+  <meta property="og:description" content="Azure設計支援・アプリ基盤構築・ID連携・セキュリティ強化を支援します。" />
+  <meta property="og:image" content="https://arcveil.com/og-image.png" />
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #1e293b;
+      --text: #0f172a;
+      --subtext: #475569;
+      --bg: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .hero {
+      padding: 96px 48px 48px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--subtext);
+      margin-bottom: 32px;
+    }
+
+    .cta-button {
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      background-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .bottom-tagline {
+      text-align: center;
+      margin: 64px 0;
+    }
+
+    .tagline-text {
+      font-family: monospace;
+      background: #f1f5f9;
+      padding: 12px 24px;
+      border-radius: 12px;
+      color: var(--primary);
+      font-size: 1.25rem;
+      font-weight: 600;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    section {
+      padding: 80px 48px;
+    }
+
+    section:nth-of-type(odd) {
+      background-color: #f9fafb;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .project-card p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--subtext);
+    }
+
+    #contact {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px;
+      background-color: #f8fafc;
+      color: var(--subtext);
+      font-size: 0.875rem;
+    }
+
+    .scroll-fade {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+
+    .scroll-fade.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Arcveil <span style="font-size: 0.8rem; font-weight: normal;">Cloud Architecture Experts</span></div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero scroll-fade">
+      <h1>Clarity & Confidence in the Cloud</h1>
+      <p>Arcveilは、Azure Architectureのプロフェッショナルとして、Secure & Scalableなクラウド基盤を共に描きます。</p>
+      <a href="#contact" class="cta-button">ご相談・お問い合わせはこちら</a>
+    </section>
+
+    <section id="about" class="scroll-fade">
+      <h2>About Arcveil（アークヴェール）</h2>
+      <p>Arcveilは、Microsoft Azureを中心としたクラウドアーキテクチャ支援に特化したブランドです。クラウド設計・認証基盤構築・セキュリティ可視化に強みを持ち、シンプルかつ信頼性の高いソリューションを提供します。</p>
+    </section>
+
+    <section id="services" class="scroll-fade">
+      <h2>Services（提供中のクラウドソリューション）</h2>
+      <ul class="services-list">
+        <li><strong>Azureソリューション設計：</strong>企業ニーズに最適化されたIaaS/PaaS構成を設計・構築（AZ-104/305準拠）</li>
+        <li><strong>アプリ開発基盤構築：</strong>Azure Functions／App Service／Logic Apps等を活用したイベント駆動型設計（AZ-204対応）</li>
+        <li><strong>クラウド移行支援：</strong>オンプレ環境からAzureへの段階的なマイグレーション設計とリスク最小化</li>
+        <li><strong>Entra ID／セキュリティ強化：</strong>ゼロトラストを見据えたID統合・アクセス制御・RBAC設計</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="scroll-fade">
+      <h2>Projects & Capabilities</h2>
+      <p>Arcveilは、単なる設計支援にとどまらず、導入可能性検証（PoC）を迅速に設計・実行し、実装段階まで伴走いたします。コンサルティングと技術力を融合させた、実効性のあるクラウド導入を支援します。</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>🔬 Azure Machine Learning</h3>
+          <p>モデル学習からMLOps基盤まで構築・運用支援</p>
+        </div>
+        <div class="project-card">
+          <h3>🤖 Azure OpenAI</h3>
+          <p>ChatGPT API／Embeddingを用いた業務PoC・ナレッジ活用</p>
+        </div>
+        <div class="project-card">
+          <h3>☁️ AWS Basics</h3>
+          <p>VPC・IAM・EC2・S3など、インフラ基礎構成の理解と展開</p>
+        </div>
+        <div class="project-card">
+          <h3>🔐 Entra ID / Intune</h3>
+          <p>ID統合・端末管理・条件付きアクセスによるセキュリティ設計</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom-tagline scroll-fade">
+      <span class="tagline-text">() => Configure().Validate().Deploy();</span>
+    </section>
+
+    <section id="contact" class="scroll-fade">
+      <h2>Contact & Inquiries</h2>
+      <p>お気軽にご相談ください：<br><a href="mailto:info@arcveil.com">info@arcveil.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Arcveil. All rights reserved.
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      document.querySelectorAll('.scroll-fade').forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
