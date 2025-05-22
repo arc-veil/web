@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Arcveil</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" crossorigin="anonymous">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About - Arcveil</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" rel="stylesheet"/>
+<style>
     :root {
       --primary: #0f172a;
       --accent: #334155;
@@ -101,8 +102,16 @@
       color: var(--subtext);
       font-size: 0.875rem;
     }
-  </style>
-  <script>
+  
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  border-left: 6px solid var(--accent);
+  padding-left: 16px;
+}</style>
+<script>
     document.addEventListener('DOMContentLoaded', () => {
       const toggle = document.querySelector('.menu-toggle');
       const nav = document.querySelector('nav ul');
@@ -113,33 +122,27 @@
   </script>
 </head>
 <body>
-  
 <header>
-  <div class="logo">Arcveil</div>
-  <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/strengths.html">Strengths</a></li>
-      <li><a href="/cases.html">Case Studies</a></li>
-      <li><a href="/faq.html">FAQ</a></li>
-    </ul>
-  </nav>
+<div class="logo">Arcveil</div>
+<div class="menu-toggle"><i class="fas fa-bars"></i></div>
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/strengths.html">Strengths</a></li>
+<li><a href="/cases.html">Case Studies</a></li>
+<li><a href="/faq.html">FAQ</a></li>
+</ul>
+</nav>
 </header>
-
-
-  <main>
-    <h1>About</h1>
-    <p>Arcveil代表は、外資系ITコンサルティング企業にて多数のクラウドプロジェクトを主導してきたクラウドアーキテクトです。C#とマイクロサービス構成に強みを持ち、Microsoft Azureを中心に構想・設計・実装・運用を一貫して支援できる実力を備えています。</p>
-
-    <p>これまでに対応した業務は、アプリ基盤構築、ゼロトラストアーキテクチャの提案、Azure OpenAIによるPoC支援、AzureMLを用いたデータ分析基盤の設計など多岐にわたります。</p>
-
-    <p>Arcveilは、設計書を超えた“動くアーキテクチャ”の提供を使命とし、あらゆるクラウド課題に誠実かつ実践的に寄り添います。</p>
-  </main>
-
-  <footer>
-    &copy; 2025 Arcveil. All rights reserved.
+<main>
+<h1 class="section-title">About</h1>
+<p>Arcveil代表は、外資系ITコンサルティング企業にて多数のクラウドプロジェクトを主導してきたクラウドアーキテクトです。C#とマイクロサービス構成に強みを持ち、Microsoft Azureを中心に構想・設計・実装・運用を一貫して支援できる実力を備えています。</p>
+<p>これまでに対応した業務は、アプリ基盤構築、ゼロトラストアーキテクチャの提案、Azure OpenAIによるPoC支援、AzureMLを用いたデータ分析基盤の設計など多岐にわたります。</p>
+<p>Arcveilは、設計書を超えた“動くアーキテクチャ”の提供を使命とし、あらゆるクラウド課題に誠実かつ実践的に寄り添います。</p>
+</main>
+<footer>
+    © 2025 Arcveil. All rights reserved.
   </footer>
 </body>
 </html>
