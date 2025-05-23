@@ -56,11 +56,15 @@
     </div>
   </section>
 
-  <section id="contact">
-    <h2 class="section-title"><i class="fas fa-envelope"></i> お問い合わせ</h2>
-    <p>ご相談・お見積りはメールでお気軽にどうぞ</p>
-    <p><a href="mailto:info@arcveil.com">info@arcveil.com</a></p>
-  </section>
+<section id="contact">
+  <h2 class="section-title">お問い合わせ</h2>
+  <form action="https://formspree.io/f/xovdzyvg" method="POST">
+    <input type="text" name="name" placeholder="貴社名またはご担当者名" required />
+    <input type="email" name="email" placeholder="メールアドレス" required />
+    <textarea name="message" rows="5" placeholder="お問い合わせ内容" required></textarea>
+    <button type="submit" class="cta-button">送信する</button>
+  </form>
+</section>
 
   <footer>
     © 2025 Arcveil. All rights reserved.
