@@ -125,7 +125,6 @@ footer {
   color: var(--accent);
 }
 
-
 .hero {
   background: linear-gradient(120deg, #1e3a8a, #2563eb);
   color: white;
@@ -152,7 +151,6 @@ footer {
   margin: 64px 0;
   color: var(--subtext);
 }
-
 
 .cta-button {
   background-color: var(--white);
