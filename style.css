@@ -23,10 +23,19 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+  position: relative;
 }
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 24px;
 }
 nav ul {
   list-style: none;
@@ -44,13 +53,15 @@ nav a {
 nav a:hover {
   color: var(--accent);
 }
-.menu-toggle {
-  display: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  margin-left: auto;
-}
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 24px;
+  }
   nav ul {
     flex-direction: column;
     gap: 12px;
@@ -65,9 +76,6 @@ nav a:hover {
   }
   nav ul.active {
     display: flex;
-  }
-  .menu-toggle {
-    display: block;
   }
 }
 main {
