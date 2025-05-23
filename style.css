@@ -124,3 +124,31 @@ footer {
   margin-bottom: 16px;
   color: var(--accent);
 }
+
+
+.hero {
+  background: linear-gradient(120deg, #1e3a8a, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 120px 48px 96px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #e2e8f0;
+}
+
+.bottom-tagline {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 64px 0;
+  color: var(--subtext);
+}
