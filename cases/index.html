@@ -17,7 +17,7 @@
           nav.classList.toggle('active');
         });
       }
-      document.body.classList.add('fade-out');
+      document.body.classList.remove('fade-out');
       setTimeout(() => {
         document.body.classList.remove('fade-out');
       }, 0);
@@ -45,10 +45,14 @@
     opacity: 0;
     transition: opacity 0.4s ease;
   }
+  body.fade-in {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
 </style>
 
 </head>
-<body>
+<body class="fade-in">
   <header>
     <a href="/" class="logo">
       <img src="../logo.svg" alt="Arcveil logo" />
