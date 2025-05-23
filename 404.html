@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ページが見つかりません - Arcveil</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+  <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" rel="stylesheet"/>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <a href="/" class="logo">
+      <img src="logo.svg" alt="Arcveil logo" />
+    </a>
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+    <nav>
+      <ul>
+        <li><a href="/">ホーム</a></li>
+        <li><a href="/about">概要</a></li>
+        <li><a href="/cases">実績</a></li>
+        <li><a href="/faq">よくある質問</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="text-align: center; padding: 120px 24px;">
+    <h1 style="font-size: 4rem; margin-bottom: 24px;">404</h1>
+    <p style="font-size: 1.5rem; color: var(--subtext);">お探しのページは見つかりませんでした。</p>
+    <a href="/" class="cta-button" style="margin-top: 40px; display: inline-block;">トップページへ戻る</a>
+  </main>
+
+  <footer>
+    © 2025 Arcveil. All rights reserved.
+  </footer>
+</body>
+</html>
