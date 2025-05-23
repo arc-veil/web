@@ -16,7 +16,7 @@
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('fade-out');
 
     document.querySelectorAll('a[href]').forEach(link => {
@@ -33,9 +33,8 @@
         });
       }
     });
-
-    document.body.classList.add('fade-out');
   });
+  document.body.classList.add('fade-out');
 </script>
 </head>
 <body>
