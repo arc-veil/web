@@ -49,7 +49,65 @@
     opacity: 1;
     transition: opacity 0.4s ease;
   }
-</style>
+  /* Diagram examples gallery */
+  .diagram-examples .diagram-gallery {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .diagram-examples .diagram-card {
+    flex: 0 0 45%;
+    text-align: center;
+  }
+  .diagram-examples .diagram-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 0.5rem;
+  }
+  /* Lightbox modal */
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center; align-items: center;
+  }
+  .lightbox img {
+    max-width: 90%; max-height: 90%;
+  }
+  .lightbox.active {
+    display: flex;
+  }
+  /* Lightbox close button */
+  .lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1;
+    z-index: 1001;
+  }
+  .lightbox-close:hover {
+    color: #ccc;
+  }
+
+  /* Disclaimer list styling */
+  .disclaimer ul {
+    list-style: disc;
+    padding: 0;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  .disclaimer ul li {
+    margin-bottom: 0.5rem;
+  }
+  </style>
 
 </head>
 <body class="fade-in">
@@ -119,8 +177,54 @@
         <p><strong>【成果】</strong>保守対応迅速化・ミス削減・教育効果向上を達成、他工場への横展開を検討中。</p>
       </div>
     </section>
+    <section class="diagram-examples">
+      <h2 class="section-title">構成例</h2>
+      <div class="diagram-gallery">
+        <div class="diagram-card">
+          <img src="img/rag.png" alt="RAG構成例">
+          <p>RAG構成例</p>
+        </div>
+        <div class="diagram-card">
+          <img src="img/ml.png" alt="ML基盤構成例">
+          <p>ML基盤構成例</p>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <section class="disclaimer">
+    <ul>
+      <li>本構成例は<b>セキュリティ要件を簡略化しており、実際のプロジェクトとは一切関係ありません。</b></li>
+      <li>ご要望に応じてDraw.io等の形式でも構成図を納品可能です。お気軽にお問い合わせください。</li>
+    </ul>
+  </section>
   <footer>© 2025 Arcveil. All rights reserved.</footer>
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox">
+    <a href="#" class="lightbox-close">×</a>
+    <img src="" alt="Expanded diagram">
+  </div>
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    document.querySelectorAll('.diagram-card img').forEach(img => {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', () => {
+        const lightboxImg = lightbox.querySelector('img');
+        lightboxImg.src = img.src;
+        lightbox.classList.add('active');
+      });
+    });
+    // Close lightbox when clicking outside the image
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+      }
+    });
+    // Close lightbox when clicking the close button
+    document.querySelector('.lightbox-close').addEventListener('click', function(e) {
+      e.preventDefault();
+      lightbox.classList.remove('active');
+    });
+  </script>
 </body>
 </html>
