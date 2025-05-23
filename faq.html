@@ -47,6 +47,17 @@
     <h2><i class="fas fa-user-shield"></i> 守秘義務・NDAについて</h2>
     <p><strong>Q. NDA（秘密保持契約）に対応できますか？</strong><br/>はい、秘密保持契約（NDA）や業務委託契約書の締結にも対応しています。</p>
   </main>
-  <footer>© 2025 Arcveil. All rights reserved.</footer>
+  <footer>
+    © 2025 Arcveil. All rights reserved.
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
