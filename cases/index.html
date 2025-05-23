@@ -27,22 +27,24 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('fade-out');
+
+    document.querySelectorAll('a[href]').forEach(link => {
+      const href = link.getAttribute('href');
+      if (
+        href.startsWith('/') && !href.includes('#') && !href.startsWith('mailto:')
+      ) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.body.classList.add('fade-out');
+          setTimeout(() => {
+            window.location.href = href;
+          }, 400);
+        });
+      }
+    });
+
+    document.body.classList.add('fade-out');
   });
-  document.querySelectorAll('a[href]').forEach(link => {
-    const href = link.getAttribute('href');
-    if (
-      href.startsWith('/') && !href.includes('#') && !href.startsWith('mailto:')
-    ) {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.body.classList.add('fade-out');
-        setTimeout(() => {
-          window.location.href = href;
-        }, 4000);
-      });
-    }
-  });
-  document.body.classList.add('fade-out');
 </script>
 </head>
 <body>
