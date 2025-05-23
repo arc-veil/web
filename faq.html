@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Arcveil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" crossorigin="anonymous">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">Arcveil</div>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/strengths.html">Strengths</a></li>
+        <li><a href="/cases.html">Case Studies</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="section-title">FAQ</h1>
+    <p><strong>Q. 相談や見積もりは無料ですか？</strong><br>はい、初回相談および簡易見積もりは無料で対応しています。</p>
+
+    <p><strong>Q. 小規模なPoCだけ依頼することも可能ですか？</strong><br>もちろん可能です。1〜2週間のスプリント型PoCにも柔軟に対応いたします。</p>
+
+    <p><strong>Q. Azure以外（AWSやGCP）も対応していますか？</strong><br>Azureを中心としつつも、基本的なAWS構成（VPC, IAM等）には対応可能です。<br>※ GCPについては現在サポート対象外です。</p>
+
+    <p><strong>Q. 実装までお願いできますか？</strong><br>はい、要件定義〜設計〜実装〜テスト〜運用設計まで、一貫して対応可能です。</p>
+  </main>
+
+  <footer>
+    &copy; 2025 Arcveil. All rights reserved.
+  </footer>
+</body>
+</html>
