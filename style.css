@@ -152,3 +152,28 @@ footer {
   margin: 64px 0;
   color: var(--subtext);
 }
+
+
+.cta-button {
+  background-color: var(--white);
+  color: var(--primary);
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.hero .cta-button {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
