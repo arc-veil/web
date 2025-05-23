@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Arcveil</title>
-<link href="/favicon.ico" rel="icon"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" rel="stylesheet"/>
-<meta content="Arcveil - Azure Architecture Experts" property="og:title"/>
-<meta content="Azure設計支援・アプリ基盤構築・ID連携・セキュリティ強化を支援します。" property="og:description"/>
-<meta content="https://arcveil.com/og-image.png" property="og:image"/>
-
-<script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcveil</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" crossorigin="anonymous">
+  <script>
     document.addEventListener('DOMContentLoaded', () => {
       const toggle = document.querySelector('.menu-toggle');
       const nav = document.querySelector('nav ul');
@@ -21,83 +17,34 @@
       });
     });
   </script>
-<link href="style.css" rel="stylesheet"/></head>
+</head>
 <body>
-<header>
-<div class="logo">Arcveil</div>
-<div class="menu-toggle"><i class="fas fa-bars"></i></div>
-<nav>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/about.html">About</a></li>
-<li><a href="/strengths.html">Strengths</a></li>
-<li><a href="/cases.html">Case Studies</a></li>
-<li><a href="/faq.html">FAQ</a></li>
-</ul>
-</nav>
-</header>
-<section class="hero">
-<h1>Clarity &amp; Confidence in the Cloud</h1>
-<p>Azure Architecture の専門家が、設計・構築・運用までをフルサポート。</p>
-<a class="cta-button" href="/#contact">お問い合わせはこちら</a>
-</section>
-<section id="about">
-<h2>About</h2>
-<p>Arcveilは、Microsoft Azureを中心としたクラウドアーキテクチャの専門ブランドです。設計からPoC、セキュリティ設計、OpenAIやAzureMLなどの最新技術まで、企業のクラウド課題を一気通貫で支援します。</p>
-</section>
-<section id="services">
-<h2>Services</h2>
-<div class="services-list">
-<div class="project-card">
-<h3><i class="fas fa-cloud"></i> Azure設計支援</h3>
-<p>AZ-104/305対応。IaaS・PaaS構成の最適化設計。</p>
-</div>
-<div class="project-card">
-<h3><i class="fas fa-cogs"></i> アプリ基盤構築</h3>
-<p>AZ-204対応。Functions / Logic Apps など。</p>
-</div>
-<div class="project-card">
-<h3><i class="fas fa-user-shield"></i> Entra ID連携</h3>
-<p>SSO、Intune、条件付きアクセスを包括設計。</p>
-</div>
-<div class="project-card">
-<h3><i class="fas fa-shield-alt"></i> セキュリティ可視化</h3>
-<p>ログ管理・アクセス制御・リスク分析の支援。</p>
-</div>
-</div>
-</section>
-<section id="projects">
-<h2>Projects</h2>
-<p>Arcveilは、設計だけでなく、導入可能性検証（PoC）や実装フェーズにも対応。特にスピーディなPoC構築と実行支援を強みとします。</p>
-<div class="projects-grid">
-<div class="project-card">
-<h3><i class="fas fa-robot"></i> Azure OpenAI</h3>
-<p>ChatGPT／Embedding API を使った業務PoC。</p>
-</div>
-<div class="project-card">
-<h3><i class="fas fa-brain"></i> Azure Machine Learning</h3>
-<p>モデル学習／推論環境／MLOpsの設計・構築。</p>
-</div>
-<div class="project-card">
-<h3><i class="fas fa-server"></i> AWS基礎構成</h3>
-<p>VPC、IAM、EC2、S3などのインフラ初期構成。</p>
-</div>
-<div class="project-card">
-<h3><i class="fas fa-laptop-medical"></i> Intune展開支援</h3>
-<p>Entra IDと連携した端末管理・セキュリティ設計。</p>
-</div>
-</div>
-</section>
-<section id="contact">
-<h2>Contact</h2>
-<p>ご相談・お見積もりはメールにてお気軽にどうぞ。</p>
-<p><a href="mailto:info@arcveil.com">info@arcveil.com</a></p>
-</section>
-<section class="bottom-tagline">
-<code>() =&gt; Configure().Validate().Deploy();</code>
-</section>
-<footer>
-    © 2025 Arcveil. All rights reserved.
+  <header>
+    <div class="logo">Arcveil</div>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/strengths.html">Strengths</a></li>
+        <li><a href="/cases.html">Case Studies</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Clarity & Confidence in the Cloud</h1>
+    <p>Azure Architecture の専門家が、設計・構築・運用までをフルサポート。</p>
+    <a href="/faq.html" class="cta-button">お問い合わせはこちら</a>
+  </section>
+
+  <section class="bottom-tagline">
+    () => Configure().Validate().Deploy();
+  </section>
+
+  <footer>
+    &copy; 2025 Arcveil. All rights reserved.
   </footer>
 </body>
 </html>
