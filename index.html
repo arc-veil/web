@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Arcveil</title>
-<link href="/favicon.ico" rel="icon"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
-<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" rel="stylesheet"/>
-<script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arcveil</title>
+  <link href="/favicon.ico" rel="icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+  <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" rel="stylesheet"/>
+  <script>
     document.addEventListener('DOMContentLoaded', () => {
       const toggle = document.querySelector('.menu-toggle');
       const nav = document.querySelector('nav ul');
@@ -20,44 +19,48 @@
   </script>
 </head>
 <body>
-<header>
-<div class="logo">Arcveil</div>
-<div class="menu-toggle"><i class="fas fa-bars"></i></div>
-<nav>
-<ul>
-<li><a href="/">ホーム</a></li>
-<li><a href="/about.html">概要</a></li>
-<li><a href="/cases.html">導入事例</a></li>
-<li><a href="/faq.html">よくある質問</a></li>
-</ul>
-</nav>
-</header>
-<section class="hero">
-<h1>クラウドに、安心と明快さを<div class="hero-subtitle">Clarity &amp; Confidence in the Cloud</div></h1>
-<p>Azure Architecture の専門家が、設計・構築・運用までをフルサポート。</p>
-<a class="cta-button" href="/about.html">概要</a>
-</section>
-<section class="services-list">
-<div class="project-card">
-<i class="fas fa-cloud fa-2x"></i>
-<h3>Azure設計</h3>
-<p>要件定義から構築・運用設計まで一貫して支援</p>
-</div>
-<div class="project-card">
-<i class="fas fa-cubes fa-2x"></i>
-<h3>PoC支援</h3>
-<p>生成AI・IoT・クラウド実証環境を短期間で構築</p>
-</div>
-<div class="project-card">
-<i class="fas fa-brain fa-2x"></i>
-<h3>AI導入</h3>
-<p>Azure OpenAI・LLMなど最先端技術の導入を支援</p>
-</div>
-</section>
-<section class="bottom-tagline">
-    () =&gt; Configure().Validate().Deploy();
+  <header>
+    <div class="logo">Arcveil</div>
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+    <nav>
+      <ul>
+        <li><a href="/">ホーム</a></li>
+        <li><a href="/about.html">概要</a></li>
+        <li><a href="/cases.html">導入事例</a></li>
+        <li><a href="/faq.html">よくある質問</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>クラウドに、安心と明快さを</h1>
+    <div class="hero-subtitle">Clarity &amp; Confidence in the Cloud</div>
+    <p>Azure Architecture の専門家が、設計・構築・運用までをフルサポート。</p>
+    <a class="cta-button" href="/about.html">概要</a>
   </section>
-<footer>
+
+  <section class="services-list">
+    <div class="project-card">
+      <h3><i class="fas fa-cloud"></i> Azure設計</h3>
+      <p>要件定義から構築・運用設計まで一貫して支援</p>
+    </div>
+    <div class="project-card">
+      <h3><i class="fas fa-cubes"></i> PoC支援</h3>
+      <p>生成AI・IoT・クラウド実証環境を短期間で構築</p>
+    </div>
+    <div class="project-card">
+      <h3><i class="fas fa-brain"></i> AI導入</h3>
+      <p>Azure OpenAI・LLMなど最先端技術の導入を支援</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title"><i class="fas fa-envelope"></i> お問い合わせ</h2>
+    <p>ご相談・お見積りはメールでお気軽にどうぞ：</p>
+    <p><a href="mailto:info@arcveil.com">info@arcveil.com</a></p>
+  </section>
+
+  <footer>
     © 2025 Arcveil. All rights reserved.
   </footer>
 </body>
