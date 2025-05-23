@@ -139,12 +139,15 @@ footer {
 }
 
 .hero {
-  background: linear-gradient(270deg, #1e3a8a, #2563eb, #1e3a8a);
-  background-size: 600% 600%;
-  animation: gradientShift 15s ease infinite;
+  background: linear-gradient(270deg, #16284d, #1b2f5b, #16284d);
+  background-size: 300% 300%;
+  animation: gradientShift 8s ease infinite, brightnessPulse 4s ease infinite;
+  filter: brightness(1);
   color: white;
   text-align: center;
   padding: 120px 48px 96px;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero h1 {
@@ -251,5 +254,44 @@ footer {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@keyframes brightnessPulse {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.3) 100%);
+  transform: skewX(-20deg) translateX(-100%);
+  animation: spark 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes spark {
+  0% {
+    transform: skewX(-20deg) translateX(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: skewX(-20deg) translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: skewX(-20deg) translateX(100%);
+    opacity: 0;
   }
 }
