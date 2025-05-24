@@ -316,3 +316,9 @@ footer {
 #contact button {
   align-self: center;
 }
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
