@@ -324,7 +324,3 @@ footer {
   font-weight: 700;
   margin-bottom: 20px;
 }
-/* Strong text shadow override for hero title */
-.hero h1 {
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6) !important;
-}
