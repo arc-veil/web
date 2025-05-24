@@ -82,6 +82,12 @@ nav a:hover {
   nav ul.active {
     display: flex;
   }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -10px;
+  }
 }
 main {
   max-width: 800px;
